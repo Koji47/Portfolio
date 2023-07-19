@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a, ul, li {
+  all: unset;
+}
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 38px;
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul, li {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+}

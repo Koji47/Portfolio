@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap');
-
 @use "./component" as *;
 @use "./layout" as *;
 @use "./variables" as *;
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: $secondary-font;
+}
+
+a, ul, li{
+    all: unset;
+}
+
+h1{
+ font-family: $primary-font;
+ font-size: 38px
+}
+
+nav{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, li{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+}
