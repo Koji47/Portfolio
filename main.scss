@@ -1,32 +1,63 @@
 @use "./component" as *;
 @use "./layout" as *;
 @use "./variables" as *;
+@use "./navbar" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&display=swap');
 
 
-
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: $secondary-font;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-a, ul, li{
-    all: unset;
+a,
+ul,
+li {
+  all: unset;
 }
 
-h1{
- font-family: $primary-font;
- font-size: 38px
+h1 {
+  font-family: $primary-font;
+  font-size: 38px;
+  align-self: center;
 }
 
-nav{
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+main{
+    display: grid;
+    grid-template-columns: .25fr 1fr 1fr 1fr .4fr;
+    grid-template-rows: 25% 5% 25% 25% ;
 }
 
-ul, li{
-    display: flex;
-    flex-direction: row;
-    margin-left: 3rem;
+.img1{
+    grid-column-start: 4;
 }
+
+h2{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    
+}
+p{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    justify-self: right;
+    
+}
+
+h3{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    font-size: 38px;
+    width: max-content;
+}
+
+// ul, li{
+//     display: flex;
+//     flex-direction: row;
+//     margin-left: 3rem;
+// }

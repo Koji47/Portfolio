@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  
+    &__Buttons,
+    &__Button,
+    &__ButtonBox {
+      display: flex;
+      flex-direction: row;
+      margin-left: 3rem;
+      align-items: center;
+      text-align: center;
+    }
+  
+    &__ButtonBox {
+      border: solid black 1px;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-left: 2rem;
+  
+      &:hover {
+        background-color: $gray-color;
+        
+        color: $secondary-color;
+      }
+    }
+    &__Button {
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  
+    }

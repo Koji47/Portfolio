@@ -1,0 +1,25 @@
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__Buttons, .navbar__Button, .navbar__ButtonBox {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  align-items: center;
+  text-align: center;
+}
+.navbar__ButtonBox {
+  border: solid black 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+.navbar__ButtonBox:hover {
+  background-color: #ebebeb;
+  color: orange;
+}
+.navbar__Button:hover {
+  color: orange;
+}
