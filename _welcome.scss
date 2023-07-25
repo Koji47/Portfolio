@@ -1,0 +1,124 @@
+.welcome {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 5% 5% 15%;
+  height: 50vh;
+  padding: 1rem;
+
+  &__emoji {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    justify-self: right;
+  }
+
+  &__name {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    font-size: 14px;
+    align-self: center;
+  }
+
+  &__job {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-size: 18px;
+  }
+
+  #salypic[src="./assets/Saly.png"] {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    width: 60vw;
+    max-width: 320px;
+    max-height: 340px;
+    justify-self: center;
+  }
+}
+
+// img {
+//   grid-row-start: 4;
+//   grid-column-start: 2;
+//   width: 60vw;
+//   max-width: 320px;
+//   max-height: 340px;
+//   justify-self: center;
+// }
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    display: grid;
+    grid-template-columns: 10% 55% 40% 20%;
+    grid-template-rows: 5% 14% 10%;
+    height: 35vh;
+    width: 90%;
+
+    &__emoji {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      justify-self: center;
+
+      font-size: 38px;
+    }
+
+    #salypic[src="./assets/Saly.png"] {
+      grid-row-start: 1;
+      grid-column-start: 3;
+      width: 100%;
+    }
+
+    &__name {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      font-size: 28px;
+      padding-top: 0.5rem;
+      align-self: flex-start;
+    }
+
+    &__job {
+      grid-row-start: 3;
+      grid-column-start: 2;
+      font-size: 36px;
+      width: max-content;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    display: grid;
+    grid-template-columns: 6rem 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 15% 10% 25% 25%;
+    height: 65vh;
+
+    width: 100vw;
+
+    &__emoji {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      justify-self: right;
+
+      font-size: 38px;
+    }
+
+    img {
+      grid-column-start: 4;
+      grid-row-start: 1;
+      margin-top: 4rem;
+      width: 30rem;
+      height: auto;
+    }
+
+    &__name {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      font-size: 38px;
+      justify-self: center, left;
+    }
+
+    &__job {
+      grid-row-start: 3;
+      grid-column-start: 2;
+      font-size: 54px;
+      width: max-content;
+    }
+  }
+}

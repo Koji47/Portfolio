@@ -1,10 +1,95 @@
 @use "./variables" as *;
 
 .navbar {
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin: 3px;
+
+  &__name {
+    font-family: $primary-font;
+    font-size: 14px;
+    align-self: center;
+    margin-left: 0.5rem;
+  }
+
+  &__Buttons,
+  &__Button,
+  &__ButtonBox {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  &__ButtonBox {
+    border: solid black 1px;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-  
+    width: 96%;
+
+    &__name {
+      font-family: $primary-font;
+      font-size: 38px;
+      align-self: center;
+    }
+
+    &__Buttons,
+    &__Button,
+    &__ButtonBox {
+      display: flex;
+      flex-direction: row;
+      margin-left: 2rem;
+      align-items: center;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    &__ButtonBox {
+      border: solid black 1px;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-left: 2rem;
+
+      &:hover {
+        background-color: $gray-color;
+
+        color: $secondary-color;
+      }
+    }
+    &__Button {
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+      font-family: $primary-font;
+      font-size: 38px;
+      align-self: center;
+    }
+
     &__Buttons,
     &__Button,
     &__ButtonBox {
@@ -14,16 +99,16 @@
       align-items: center;
       text-align: center;
     }
-  
+
     &__ButtonBox {
       border: solid black 1px;
       padding: 1rem;
       border-radius: 1rem;
       margin-left: 2rem;
-  
+
       &:hover {
         background-color: $gray-color;
-        
+
         color: $secondary-color;
       }
     }
@@ -32,5 +117,5 @@
         color: $secondary-color;
       }
     }
-  
-    }
+  }
+}
