@@ -28,22 +28,23 @@
   margin-left: 1rem;
   margin-right: 0.7rem;
 }
+.navbar__ButtonBox:hover {
+  background-color: orangered;
+  color: white;
+}
+.navbar__Button:hover {
+  color: orangered;
+}
 
 @media screen and (min-width: 768px) {
   .navbar {
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
     width: 96%;
   }
   .navbar__name {
-    font-family: "Nunito Sans", sans-serif;
     font-size: 38px;
-    align-self: center;
   }
   .navbar__Buttons, .navbar__Button, .navbar__ButtonBox {
-    display: flex;
-    flex-direction: row;
     margin-left: 2rem;
     align-items: center;
     text-align: center;
@@ -51,48 +52,16 @@
   }
   .navbar__ButtonBox {
     padding: 1rem;
-    border-radius: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-  .navbar__ButtonBox:hover {
-    background-color: rgb(235, 235, 235);
-    color: orange;
-  }
-  .navbar__Button:hover {
-    color: orange;
   }
 }
 @media screen and (min-width: 1024px) {
   .navbar {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
     width: auto;
   }
-  .navbar__name {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 38px;
-    align-self: center;
-  }
   .navbar__Buttons, .navbar__Button, .navbar__ButtonBox {
-    display: flex;
-    flex-direction: row;
     margin-left: 3rem;
-    align-items: center;
-    text-align: center;
-  }
-  .navbar__ButtonBox {
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-left: 2rem;
-  }
-  .navbar__ButtonBox:hover {
-    background-color: rgb(235, 235, 235);
-    color: orange;
-  }
-  .navbar__Button:hover {
-    color: orange;
   }
 }
 .welcome {
@@ -287,6 +256,7 @@ h4 {
     width: fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    font-size: 24px;
   }
 }
 * {

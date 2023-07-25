@@ -32,27 +32,37 @@
     border-radius: 1rem;
     margin-left: 1rem;
     margin-right: 0.7rem;
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+
+  &__Button {
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .navbar {
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     width: 96%;
 
     &__name {
-      font-family: $primary-font;
+      // font-family: $primary-font;
       font-size: 38px;
-      align-self: center;
+      // align-self: center;
     }
 
     &__Buttons,
     &__Button,
     &__ButtonBox {
-      display: flex;
-      flex-direction: row;
+      // display: flex;
+      // flex-direction: row;
       margin-left: 2rem;
       align-items: center;
       text-align: center;
@@ -61,62 +71,51 @@
 
     &__ButtonBox {
       padding: 1rem;
-      border-radius: 1rem;
+      // border-radius: 1rem;
       margin-left: 2rem;
       margin-right: 2rem;
-
-      &:hover {
-        background-color: $gray-color;
-
-        color: $secondary-color;
-      }
-    }
-    &__Button {
-      &:hover {
-        color: $secondary-color;
-      }
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
+    // padding: 1rem;
+    // display: flex;
+    // justify-content: space-between;
     width: auto;
 
     &__name {
-      font-family: $primary-font;
-      font-size: 38px;
-      align-self: center;
+      // font-family: $primary-font;
+      // font-size: 38px;
+      // align-self: center;
     }
 
     &__Buttons,
     &__Button,
     &__ButtonBox {
-      display: flex;
-      flex-direction: row;
+      // display: flex;
+      // flex-direction: row;
       margin-left: 3rem;
-      align-items: center;
-      text-align: center;
+      // align-items: center;
+      // text-align: center;
     }
 
     &__ButtonBox {
-      padding: 1rem;
-      border-radius: 1rem;
-      margin-left: 2rem;
+      // padding: 1rem;
+      // border-radius: 1rem;
+      // margin-left: 2rem;
 
-      &:hover {
-        background-color: $gray-color;
+      // &:hover {
+      // background-color: $gray-color;
 
-        color: $secondary-color;
-      }
-    }
-    &__Button {
-      &:hover {
-        color: $secondary-color;
-      }
+      // color: $secondary-color;
+      // }
+      // }
+      // &__Button {
+      // &:hover {
+      // color: $secondary-color;
+      // }
     }
   }
 }
