@@ -22,9 +22,10 @@
     grid-row-start: 2;
     grid-column-start: 2;
     font-size: 18px;
+    color: orangered;
   }
 
-  #salypic[src="./assets/Saly.png"] {
+  .salypic[src="./assets/Saly.png"] {
     grid-row-start: 4;
     grid-column-start: 2;
     width: 60vw;
@@ -47,7 +48,7 @@
   .welcome {
     display: grid;
     grid-template-columns: 10% 55% 40% 20%;
-    grid-template-rows: 5% 14% 10%;
+    grid-template-rows: 5% 10% 10%;
     height: 35vh;
     width: 90%;
 
@@ -59,7 +60,7 @@
       font-size: 38px;
     }
 
-    #salypic[src="./assets/Saly.png"] {
+    .salypic[src="./assets/Saly.png"] {
       grid-row-start: 1;
       grid-column-start: 3;
       width: 100%;
@@ -99,12 +100,13 @@
       font-size: 38px;
     }
 
-    img {
+    .salypic[src="./assets/Saly.png"] {
       grid-column-start: 4;
       grid-row-start: 1;
       margin-top: 4rem;
-      width: 30rem;
-      height: auto;
+      width: 30vw;
+      max-width: fit-content;
+      max-height: fit-content;
     }
 
     &__name {

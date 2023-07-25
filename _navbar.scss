@@ -12,6 +12,7 @@
     font-size: 14px;
     align-self: center;
     margin-left: 0.5rem;
+    color: orangered;
   }
 
   &__Buttons,
@@ -26,7 +27,7 @@
   }
 
   &__ButtonBox {
-    border: solid black 1px;
+    border: solid orangered 2px;
     padding: 0.4rem;
     border-radius: 1rem;
     margin-left: 1rem;
@@ -59,10 +60,10 @@
     }
 
     &__ButtonBox {
-      border: solid black 1px;
       padding: 1rem;
       border-radius: 1rem;
       margin-left: 2rem;
+      margin-right: 2rem;
 
       &:hover {
         background-color: $gray-color;
@@ -83,6 +84,7 @@
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    width: auto;
 
     &__name {
       font-family: $primary-font;
@@ -101,7 +103,6 @@
     }
 
     &__ButtonBox {
-      border: solid black 1px;
       padding: 1rem;
       border-radius: 1rem;
       margin-left: 2rem;
