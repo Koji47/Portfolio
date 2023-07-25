@@ -99,7 +99,6 @@
 
 @media screen and (min-width: 768px) {
   .welcome {
-    display: grid;
     grid-template-columns: 10% 55% 40% 20%;
     grid-template-rows: 5% 10% 10%;
     height: 35vh;
@@ -107,7 +106,6 @@
   }
   .welcome__emoji {
     grid-row-start: 2;
-    grid-column-start: 1;
     justify-self: center;
     font-size: 38px;
   }
@@ -118,14 +116,12 @@
   }
   .welcome__name {
     grid-row-start: 2;
-    grid-column-start: 2;
     font-size: 28px;
     padding-top: 0.5rem;
     align-self: flex-start;
   }
   .welcome__job {
     grid-row-start: 3;
-    grid-column-start: 2;
     font-size: 36px;
     width: -moz-max-content;
     width: max-content;
@@ -133,21 +129,16 @@
 }
 @media screen and (min-width: 1024px) {
   .welcome {
-    display: grid;
     grid-template-columns: 6rem 1fr 1fr 1fr 0.4fr;
     grid-template-rows: 15% 10% 25% 25%;
     height: 65vh;
     width: 100vw;
   }
   .welcome__emoji {
-    grid-row-start: 2;
-    grid-column-start: 1;
     justify-self: right;
-    font-size: 38px;
   }
   .welcome .salypic[src="./assets/Saly.png"] {
     grid-column-start: 4;
-    grid-row-start: 1;
     margin-top: 4rem;
     width: 30vw;
     max-width: -moz-fit-content;
@@ -156,17 +147,11 @@
     max-height: fit-content;
   }
   .welcome__name {
-    grid-row-start: 2;
-    grid-column-start: 2;
     font-size: 38px;
     justify-self: center, left;
   }
   .welcome__job {
-    grid-row-start: 3;
-    grid-column-start: 2;
     font-size: 54px;
-    width: -moz-max-content;
-    width: max-content;
   }
 }
 .about {
