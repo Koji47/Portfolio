@@ -58,7 +58,9 @@ h4 {
   .about {
     &__img2 {
       height: auto;
+      max-height: 610px;
       width: 40vw;
+      max-width: 420px;
       padding-bottom: 4rem;
     }
 

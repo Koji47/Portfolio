@@ -1,0 +1,74 @@
+@use "./variables" as *;
+
+footer {
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 40px;
+
+  .github [src="./assets/Github.png"] {
+    height: 50px;
+    width: 50px;
+  }
+  .linkedin [src="./assets/linkedin.png"] {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+}
+
+// .skills {
+//   display: flex;
+//   width: 50px;
+//   height: 50px;
+//   justify-content: center;
+// }
+// .skills {
+//   display: grid;
+//   grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw 15vw;
+//   grid-template-rows: 50px;
+//   justify-content: center;
+
+//   &__html {
+//     grid-column-start: 1;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__css {
+//     grid-column-start: 2;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__scss {
+//     grid-column-start: 3;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__js {
+//     grid-column-start: 4;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__github {
+//     grid-column-start: 5;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__unity {
+//     grid-column-start: 6;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   &__unreal {
+//     grid-column-start: 7;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }

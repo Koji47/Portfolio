@@ -207,12 +207,36 @@ h4 {
 @media screen and (min-width: 1024px) {
   .about__img2 {
     height: auto;
+    max-height: 610px;
     width: 40vw;
+    max-width: 420px;
     padding-bottom: 4rem;
   }
   .about__text {
     grid-row-start: 3;
     font-size: 24px;
+  }
+}
+footer {
+  background-color: orangered;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 40px;
+}
+footer .github [src="./assets/Github.png"] {
+  height: 50px;
+  width: 50px;
+}
+footer .linkedin [src="./assets/linkedin.png"] {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    justify-content: space-evenly;
+    margin-top: 40px;
   }
 }
 * {
