@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .welcome {
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -22,7 +24,7 @@
     grid-row-start: 2;
     grid-column-start: 2;
     font-size: 18px;
-    color: orangered;
+    color: $secondary-color;
   }
 
   .salypic[src="./assets/Saly.png"] {
@@ -35,28 +37,16 @@
   }
 }
 
-// img {
-//   grid-row-start: 4;
-//   grid-column-start: 2;
-//   width: 60vw;
-//   max-width: 320px;
-//   max-height: 340px;
-//   justify-self: center;
-// }
-
 @media screen and (min-width: 768px) {
   .welcome {
-    // display: grid;
     grid-template-columns: 10% 55% 40% 20%;
-    grid-template-rows: 5% 10% 10%;
+    grid-template-rows: 5% 16% 20%;
     height: 35vh;
     width: 90%;
 
     &__emoji {
-      grid-row-start: 2;
-      // grid-column-start: 1;
       justify-self: center;
-
+      grid-row-start: 2;
       font-size: 38px;
     }
 
@@ -68,7 +58,6 @@
 
     &__name {
       grid-row-start: 2;
-      // grid-column-start: 2;
       font-size: 28px;
       padding-top: 0.5rem;
       align-self: flex-start;
@@ -76,33 +65,27 @@
 
     &__job {
       grid-row-start: 3;
-      // grid-column-start: 2;
       font-size: 36px;
-      width: max-content;
+
+      grid-column-start: 2;
+      width: auto;
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .welcome {
-    // display: grid;
-    grid-template-columns: 6rem 1fr 1fr 1fr 0.4fr;
+    grid-template-columns: 6rem 5fr 0.5fr 1fr 0.4fr;
     grid-template-rows: 15% 10% 25% 25%;
     height: 65vh;
-
     width: 100vw;
 
     &__emoji {
-      // grid-row-start: 2;
-      // grid-column-start: 1;
       justify-self: right;
-
-      // font-size: 38px;
     }
 
     .salypic[src="./assets/Saly.png"] {
       grid-column-start: 4;
-      // grid-row-start: 1;
       margin-top: 4rem;
       width: 30vw;
       max-width: fit-content;
@@ -110,17 +93,12 @@
     }
 
     &__name {
-      // grid-row-start: 2;
-      // grid-column-start: 2;
       font-size: 38px;
       justify-self: center, left;
     }
 
     &__job {
-      // grid-row-start: 3;
-      // grid-column-start: 2;
       font-size: 54px;
-      // width: max-content;
     }
   }
 }

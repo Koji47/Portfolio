@@ -1,18 +1,19 @@
 @use "./variables" as *;
 
 .navbar {
-  padding: 0.3rem;
   display: flex;
   justify-content: space-between;
   width: auto;
+
+  padding: 0.3rem;
   margin: 3px;
 
   &__name {
-    font-family: $primary-font;
-    font-size: 14px;
     align-self: center;
     margin-left: 0.5rem;
-    color: orangered;
+    font-size: 14px;
+    font-family: $primary-font;
+    color: $secondary-color;
   }
 
   &__Buttons,
@@ -20,21 +21,21 @@
   &__ButtonBox {
     display: flex;
     flex-direction: row;
-    margin-left: 1rem;
     align-items: center;
     text-align: center;
+    margin-left: 1rem;
     font-size: 12px;
   }
 
   &__ButtonBox {
-    border: solid orangered 2px;
+    border: solid $secondary-color 2px;
     padding: 0.4rem;
     border-radius: 1rem;
     margin-left: 1rem;
     margin-right: 0.7rem;
     &:hover {
       background-color: $secondary-color;
-      color: white;
+      color: $tertiary-color;
     }
   }
 
@@ -48,30 +49,22 @@
 @media screen and (min-width: 768px) {
   .navbar {
     padding: 1rem;
-    // display: flex;
-    // justify-content: space-between;
     width: 96%;
-
     &__name {
-      // font-family: $primary-font;
       font-size: 38px;
-      // align-self: center;
     }
 
     &__Buttons,
     &__Button,
     &__ButtonBox {
-      // display: flex;
-      // flex-direction: row;
-      margin-left: 2rem;
       align-items: center;
       text-align: center;
       font-size: 24px;
+      margin-left: 2rem;
     }
 
     &__ButtonBox {
       padding: 1rem;
-      // border-radius: 1rem;
       margin-left: 2rem;
       margin-right: 2rem;
     }
@@ -80,42 +73,11 @@
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    // padding: 1rem;
-    // display: flex;
-    // justify-content: space-between;
     width: auto;
-
-    &__name {
-      // font-family: $primary-font;
-      // font-size: 38px;
-      // align-self: center;
-    }
-
     &__Buttons,
     &__Button,
     &__ButtonBox {
-      // display: flex;
-      // flex-direction: row;
       margin-left: 3rem;
-      // align-items: center;
-      // text-align: center;
-    }
-
-    &__ButtonBox {
-      // padding: 1rem;
-      // border-radius: 1rem;
-      // margin-left: 2rem;
-
-      // &:hover {
-      // background-color: $gray-color;
-
-      // color: $secondary-color;
-      // }
-      // }
-      // &__Button {
-      // &:hover {
-      // color: $secondary-color;
-      // }
     }
   }
 }
